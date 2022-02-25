@@ -1,15 +1,14 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        max_ = 0
-        non_repeating_string = ""
-        for s1 in s:
-            if s1 not in non_repeating_string:
-                # keep concatenating until no repeated character
-                non_repeating_string += s1
-				# find max from previous max and current length of non repeating string
-                max_ = max(max_, len(non_repeating_string))
+        used = {}
+        max_length = start = 0
+        for i, c in enumerate(s):
+            if c in used and start <= used[c]:
+                start = used[c] + 1
             else:
-                #if a character is repeating, start from next char again
-                non_repeating_string = non_repeating_string.split(s1)[1] + s1
-            # print(non_repeating_string)
-        return max_
+                max_length = max(max_length, i - start + 1)
+
+            used[c] = i
+
+
+        return max_length
