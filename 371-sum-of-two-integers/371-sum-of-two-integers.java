@@ -1,11 +1,11 @@
 class Solution {
     public int getSum(int a, int b) {
-        int temp;
+        int tmp;
         while(b != 0)
         {
-            temp = (a & b) << 1;
+            tmp = (a & b) << 1;
             a = a ^ b;
-            b = temp;
+            b = tmp;
         }
         
         return a;
