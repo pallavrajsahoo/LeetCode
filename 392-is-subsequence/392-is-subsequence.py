@@ -1,15 +1,16 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        if len(s)==0:
+        n = len(s)
+        
+        if n == 0:
             return True
-        if len(t)==0:
-            return False
-        fin=len(s)
-        j=0
-        for i in t:
-            if i==s[j]:
-                j+=1 #If we find one letter from s, we hop on to find next
-                if j==fin: #If all the letters from s are covered, that means our work here is done.
+        
+        i = 0
+        for c in t:
+            if c == s[i]:
+                i += 1
+                if i == n:
                     return True
+        
         return False
         
