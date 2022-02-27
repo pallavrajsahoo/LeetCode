@@ -1,7 +1,7 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
        
-        if s == '':
+        if len(s) == 0:
             return True
         
         x = 0
