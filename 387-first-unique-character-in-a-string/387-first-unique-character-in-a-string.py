@@ -1,8 +1,7 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         count = Counter(s)
-        
-        # find the index
+
         for i in count.keys():
             if count[i] == 1:
                 return s.index(i)  
