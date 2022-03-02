@@ -5,8 +5,8 @@ class Solution:
         for idx, val in enumerate(nums):
             if val in hashmap and idx - hashmap[val] <= k:
                 return True
-            else:
-                hashmap[val] = idx
+    
+            hashmap[val] = idx
                 
         return False
                 
