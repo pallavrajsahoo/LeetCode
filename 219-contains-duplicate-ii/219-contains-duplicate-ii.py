@@ -3,7 +3,7 @@ class Solution:
         hashmap = dict()
         
         for idx, val in enumerate(nums):
-            if val in hashmap and abs(idx - hashmap[val]) <= k:
+            if val in hashmap and idx - hashmap[val] <= k:
                 return True
             else:
                 hashmap[val] = idx
