@@ -17,8 +17,6 @@ class Solution:
                 stack.pop()
             else:
                 return False
-            
-        print(stack)
         return len(stack) == 0
             
             
