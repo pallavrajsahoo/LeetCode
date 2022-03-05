@@ -12,6 +12,7 @@ class Solution:
             else:
                 hashset.remove(s[i])
                 i += 1
+                
         return maxLen
             
         
