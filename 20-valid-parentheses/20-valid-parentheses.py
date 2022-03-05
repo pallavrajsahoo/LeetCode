@@ -16,8 +16,7 @@ class Solution:
             elif c == ']' and stack and stack[-1] == '[':
                 stack.pop()
             else:
-                return False
-            
+                return False 
         return len(stack) == 0
             
             
