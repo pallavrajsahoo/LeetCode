@@ -25,7 +25,7 @@ class Solution:
         for i in s:
             if i in check:
                 stack.append(i)
-            elif not stack or check[stack.pop()] != i:
+            elif len(stack) == 0 or check[stack.pop()] != i:
                 return False
                 
         return len(stack) == 0
