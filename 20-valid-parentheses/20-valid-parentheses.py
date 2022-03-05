@@ -23,6 +23,7 @@ class Solution:
         stack = []
         check = {'(' : ')', '[' : ']', '{' : '}'}
         for i in s:
+            
             if i in check:
                 stack.append(i)
             elif len(stack) == 0 or check[stack.pop()] != i:
