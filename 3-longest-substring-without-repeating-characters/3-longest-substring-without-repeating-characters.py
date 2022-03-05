@@ -7,7 +7,6 @@ class Solution:
                 l = used[letter] + 1
             else:
                 max_length = max(max_length, r - l + 1)
-
             used[letter] = r
 
 
