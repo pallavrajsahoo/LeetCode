@@ -9,7 +9,6 @@ class Solution:
             else:
                 maxlen = max(maxlen, r-l+1)
             used[val] = r
-        
         return maxlen
             
         
