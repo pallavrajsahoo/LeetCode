@@ -8,6 +8,5 @@ class Solution:
                 max_profit = max(max_profit, profit)
             else:
                 left = right
-        
         return max_profit
         
