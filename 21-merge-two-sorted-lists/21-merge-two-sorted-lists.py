@@ -15,7 +15,6 @@ class Solution:
             else:
                 tail.next = list2
                 list2 = list2.next
-            
             tail = tail.next
             
         if list1 is None:
