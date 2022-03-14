@@ -1,7 +1,7 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
          
-        new = "".join(s.split(" ")).lower()
+        new = "".join(s.split(" "))
         pal = ""
         for char in s:
             if char.isalnum():
