@@ -4,7 +4,6 @@ class Solution:
         result = nums[0]
         for i in nums:
             sum = max(i, sum+i)
-            result = max(result, sum)
-            
+            result = max(result, sum)   
         return result
         
