@@ -5,5 +5,6 @@ class Solution:
         for i in nums:
             sum = max(i, sum+i)
             result = max(result, sum)
+            
         return result
         
