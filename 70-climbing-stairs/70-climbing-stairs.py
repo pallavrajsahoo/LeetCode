@@ -4,6 +4,5 @@ class Solution:
         
         for i in range(n-1):
             one, two = one+two, one
-        
         return one
         
