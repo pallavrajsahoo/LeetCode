@@ -21,5 +21,4 @@ class Solution:
             tail.next = list2
         else:
             tail.next = list1
-        
         return dummy.next
