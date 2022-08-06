@@ -17,10 +17,9 @@ class Solution:
             
             carry = sum // 10
             val = sum % 10
-            newNode = ListNode(val)
-            current.next = newNode
+            current.next = ListNode(val)
             
-            current = newNode
+            current = current.next
             l1 = l1.next if l1 else None
             l2 = l2.next if l2 else None
             
