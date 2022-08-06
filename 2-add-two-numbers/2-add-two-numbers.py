@@ -13,6 +13,7 @@ class Solution:
             x = l1.val if l1 else 0
             y = l2.val if l2 else 0
             sum = x + y + carry
+            
             carry = sum // 10
             val = sum % 10
             current.next = ListNode(val)
