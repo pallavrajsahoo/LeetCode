@@ -7,9 +7,7 @@ class Solution:
             morse = ''
             for letter in word:
                 morse += val[ord(letter)-ord('a')]
-            
             transformation.add(morse)
-        
         return len(transformation)
         
         
