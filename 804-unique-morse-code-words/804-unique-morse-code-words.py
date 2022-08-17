@@ -10,11 +10,9 @@ class Solution:
             
         unique = set()
         for word in words:
-            size = len(word)
             morse = ''
-            for j in range(size):
+            for j in range(len(word)):
                 morse += d[word[j]]
-            
             unique.add(morse)
         
         return len(unique)
