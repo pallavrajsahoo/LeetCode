@@ -4,7 +4,6 @@ class Solution:
         
         for index, val in enumerate(nums):
             temp = target - val
-            
             if temp in result:
                 return [result[temp], index]
             else:
