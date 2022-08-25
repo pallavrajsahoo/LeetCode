@@ -14,15 +14,14 @@ class Solution:
             'M' : 1000
         }
         
-        for i in reversed(s):
-            if symbol[i] >= previous:
-                previous = symbol[i]
-                result += previous
+        for i in range(len(s)):
+            if i+1 < len(s) and symbol[s[i]] < symbol[s[i+1]]:
+                result -= symbol[s[i]]
             else:
-                previous = symbol[i]
-                result -= previous
+                result += symbol[s[i]]
         
         return result
+                
                 
                 
             
