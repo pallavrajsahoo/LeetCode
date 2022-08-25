@@ -1,9 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-       
-        previous = 0
         result = 0
-        
         symbol = {
             'I' : 1,
             'V' : 5,
