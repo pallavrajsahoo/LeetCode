@@ -4,7 +4,7 @@ class Solution:
             return False
         
         for i in set(s):
-            if i not in set(t):
+            if i not in t:
                 return False
             else:
                 if s.count(i) != t.count(i):
