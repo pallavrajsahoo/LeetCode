@@ -3,7 +3,7 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        for i in s:
+        for i in set(s):
             if i not in t:
                 return False
             else:
