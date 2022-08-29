@@ -3,8 +3,8 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        for i in s:
-            if i not in t:
+        for i in set(s):
+            if i not in set(t):
                 return False
             else:
                 if s.count(i) != t.count(i):
