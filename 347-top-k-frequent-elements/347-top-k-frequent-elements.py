@@ -4,5 +4,5 @@ class Solution:
         
         for n in nums:
             count[n] = 1 + count.get(n, 0)
-        return sorted(count, key=count.get, reverse=True)[:k]
+        return sorted(count, key=count.get,  reverse=True)[:k]
         
