@@ -3,9 +3,8 @@ class Solution:
         result = []
         
         c = Counter(nums)
-        temp = c.most_common(k)
         
-        for i in temp:
+        for i in c.most_common(k):
             result.append(i[0])
         
         #print(result)
