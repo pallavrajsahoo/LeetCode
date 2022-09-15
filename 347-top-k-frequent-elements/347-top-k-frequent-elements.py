@@ -7,8 +7,6 @@ class Solution:
         for i in c.most_common(k):
             result.append(i[0])
         
-        #print(result)
-        
         return result
             
         
