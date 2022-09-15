@@ -1,12 +1,9 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        result = []
+        count = dict()
         
-        c = Counter(nums)
-        for i in c.most_common(k):
-            result.append(i[0])
+        for n in nums:
+            count[n] = 1 + count.get(n, 0)
         
-        return result
-            
-        
+        return sorted(count, key=count.get, reverse=True)[:k]
         
