@@ -12,5 +12,6 @@ class Solution:
             answer[i] *= postfix
             postfix *= nums[i]
         
+        
         return answer
         
