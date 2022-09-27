@@ -12,8 +12,6 @@ class Solution:
         for n in even:
             count[n] = 1 + count.get(n, 0)
         
-        print(count)
-        
         key = float('inf')
         val = 0
         result = 0
