@@ -3,6 +3,7 @@ class Solution:
         count = dict()
         freq = [[] for i in range(len(nums)+1)]
         result = []
+        
         for n in nums:
             count[n] = 1 + count.get(n, 0)
         
@@ -14,5 +15,6 @@ class Solution:
                 result.append(n)
                 if(len(result) == k):
                     return result
-                
-    
+            
+        
+        
