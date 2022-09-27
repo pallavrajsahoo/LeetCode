@@ -10,7 +10,6 @@ class Solution:
             heapq.heappush(result, (c,n))
             if len(result) > k:
                 heapq.heappop(result)
-            
         
         final = [i[1] for i in result]
         return final
