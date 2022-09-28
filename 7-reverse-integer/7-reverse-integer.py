@@ -3,7 +3,6 @@ class Solution:
         result = 0
         sign = -1 if x<0 else 1
         x = abs(x)
-        
         while x:
             digit = x%10
             result = digit + 10 * result
