@@ -8,5 +8,6 @@ class Solution:
                 second = n
             else:
                 return True
+            
         return False
         
