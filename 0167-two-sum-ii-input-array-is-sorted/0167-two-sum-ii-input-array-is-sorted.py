@@ -5,9 +5,9 @@ class Solution:
 
         while(left < right):
             total = numbers[left] + numbers[right]
-            if total == target:
-                return [left+1, right+1]
             if total < target:
                 left += 1
-            else:
+            elif total > target:
                 right -= 1
+            else:
+                 return [left+1, right+1]
