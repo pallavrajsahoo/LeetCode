@@ -12,5 +12,4 @@ class Solution:
             current.next = previous
             previous = current
             current = temp
-        
         return previous
