@@ -1,9 +1,13 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        lookup = dict()
-        for i, val in enumerate(numbers):
-            temp = target - val
-            if temp in lookup:
-                return [lookup[temp], i+1]
+        left = 0
+        right = len(numbers)-1
+
+        while(left < right):
+            total = numbers[left] + numbers[right]
+            if total == target:
+                return [left+1, right+1]
+            if total < target:
+                left += 1
             else:
-                lookup[val] = i+1
+                right -= 1
