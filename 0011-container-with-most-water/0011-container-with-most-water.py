@@ -3,7 +3,7 @@ class Solution:
 
         left = 0
         right = len(height)-1
-        maximum = -1
+        maximum = 0
 
         while left < right:
             area = min(height[left], height[right]) * (right-left)
