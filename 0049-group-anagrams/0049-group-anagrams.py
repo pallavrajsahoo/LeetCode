@@ -6,7 +6,6 @@ class Solution:
             count = [0]*26
             for ch in s:
                 count[ord(ch)-ord('a')] += 1
-            
             anagram[tuple(count)].append(s)
         
         return anagram.values()
