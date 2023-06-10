@@ -3,10 +3,7 @@ class Solution:
         anagram = defaultdict(list)
 
         for s in strs:
-            count = [0]*26
-            for ch in s:
-                count[ord(ch)-ord('a')] += 1
-            anagram[tuple(count)].append(s)
+            anagram["".join(sorted(s))].append(s)
         
         return anagram.values()
         
