@@ -4,7 +4,6 @@ class Solution:
         for ch in s:
             if self.isalpha(ch.lower()):
                 new_str += ch.lower()
-        
         return new_str == new_str[::-1]
 
     
