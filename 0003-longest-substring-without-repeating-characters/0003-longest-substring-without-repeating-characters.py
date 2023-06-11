@@ -8,7 +8,6 @@ class Solution:
             while s[right] in char_set:
                 char_set.remove(s[left])
                 left += 1
-            
             char_set.add(s[right])
             length = max(length, len(char_set))
         
