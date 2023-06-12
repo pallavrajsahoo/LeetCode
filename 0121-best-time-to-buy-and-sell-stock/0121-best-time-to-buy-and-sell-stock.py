@@ -4,7 +4,7 @@ class Solution:
         left = 0
         right = 1
 
-        while left < right and right < len(prices):
+        while right < len(prices):
             if prices[left] > prices[right]:
                 left = right
             else:
