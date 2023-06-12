@@ -8,7 +8,6 @@ class Solution:
                 count = 1
                 while num + count in num_set:
                     count += 1
-            
                 max_count = max(max_count, count)
         
         return max_count
