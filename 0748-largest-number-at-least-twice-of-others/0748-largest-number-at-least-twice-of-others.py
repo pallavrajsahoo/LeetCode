@@ -9,7 +9,6 @@ class Solution:
             else:
                 if num*2 > largest:
                     flag = 1
-        
         if flag == 1:
             return -1
         else:
