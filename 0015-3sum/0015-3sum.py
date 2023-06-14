@@ -9,6 +9,7 @@ class Solution:
             
             left = i+1
             right = len(nums) - 1
+            
             while left < right:
                 three_sum = nums[i] + nums[left] + nums[right]
                 if three_sum > 0:
