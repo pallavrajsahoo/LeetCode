@@ -2,4 +2,4 @@
 
 Select p.firstName, p.lastName, a.city, a.state
 From person p Left Join address a 
-on p.personId = a.personId
+on p.personId = a.personId;
