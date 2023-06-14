@@ -6,6 +6,7 @@ class Solution:
         for i, val in enumerate(nums):
             if i > 0 and val == nums[i-1]:
                 continue
+                
             left = i+1
             right = len(nums) - 1
 
