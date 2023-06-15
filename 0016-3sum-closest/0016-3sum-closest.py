@@ -19,6 +19,7 @@ class Solution:
                 if min_diff > diff:
                     min_diff = diff
                     result = three_sum
+                    
         return result
         
 
