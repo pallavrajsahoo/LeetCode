@@ -16,7 +16,6 @@ class Solution:
                 else:
                     right -= 1
                 diff = abs(target - three_sum)
-                
                 if min_diff > diff:
                     min_diff = diff
                     result = three_sum
