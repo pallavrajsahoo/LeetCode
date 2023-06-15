@@ -4,6 +4,7 @@ class Solution:
         stack=[]
 
         for ch in s:
+            
             if ch in bracket:
                 if stack and stack[-1] == bracket[ch]:
                     stack.pop()
